@@ -21,6 +21,9 @@ const config = {
         light: {
           1: '#F5F5F5',
         },
+        blue: {
+          1: 'rgb(6 182 212)',
+        },
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
