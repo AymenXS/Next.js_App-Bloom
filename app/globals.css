@@ -2,6 +2,21 @@
   @tailwind components;
   @tailwind utilities;
 
+  /* ======== stream css overrides ======== */
+  .glassmorphism {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+  }
+  .glassmorphism2 {
+    background: rgba(18, 17, 17, 0.25);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+
+  
+  /* =============================== */
+
   @layer utilities {
     .flex-center {
       @apply flex justify-center items-center;
@@ -76,11 +91,5 @@
     }
   }
 
-  @layer base {
-    * {
-      @apply border-border;
-    }
-    body {
-      @apply bg-background text-foreground;
-    }
-  }
+ 
+ 
