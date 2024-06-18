@@ -105,14 +105,14 @@ const MeetingTypeList = () => {
           handleClick={createMeeting}
         >
           <div className="flex flex-col gap-2.5">
-            <label className="text-base font-normal leading-[22.4px] text-sky-2">Add a description</label>
+            <label className="text-base font-normal leading-[22.4px]">Add a description</label>
             <Textarea
-              className="border-none bg-dark-3 focus-visible:ring-0 focus-visible:ring-offset-0"
+              className="border-none bg-dark-3 focus-visible:ring-0 focus-visible:ring-offset-0  focus:bg-slate-200"
               onChange={(e) => setValues({ ...values, description: e.target.value })}
             />
           </div>
           <div className="flex w-full flex-col gap-2.5">
-            <label className="text-base font-normal leading-[22.4px] text-sky-2">Select Date and Time</label>
+            <label className="text-base font-normal leading-[22.4px]">Select Date and Time</label>
             <ReactDatePicker
               selected={values.dateTime}
               onChange={(date) => setValues({ ...values, dateTime: date! })}
@@ -121,7 +121,7 @@ const MeetingTypeList = () => {
               timeIntervals={15}
               timeCaption="time"
               dateFormat="MMMM d, yyyy h:mm aa"
-              className="w-full rounded bg-dark-3 p-2 focus:outline-none"
+              className="w-full rounded bg-dark-3 p-2 focus:outline-none focus:bg-slate-200"
             />
           </div>
         </MeetingModal>
@@ -145,14 +145,14 @@ const MeetingTypeList = () => {
         isOpen={meetingState === 'isJoiningMeeting'}
         onClose={() => setMeetingState(undefined)}
         title="Type the link here"
-        className="text-center"
+        className="text-center "
         buttonText="Join Meeting"
         handleClick={() => router.push(values.link)}
       >
         <Input
           placeholder="Meeting link"
           onChange={(e) => setValues({ ...values, link: e.target.value })}
-          className="border-none bg-dark-3 focus-visible:ring-0 focus-visible:ring-offset-0"
+          className="border-none focus-visible:ring-0 focus-visible:ring-offset-0 bg-slate-200 focus:bg-white"
         />
       </MeetingModal>
 
