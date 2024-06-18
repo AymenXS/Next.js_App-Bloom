@@ -20,6 +20,7 @@ const config = {
         },
         light: {
           1: '#F5F5F5',
+          2: '#'
         },
         blue: {
           1: 'rgb(6 182 212)',
