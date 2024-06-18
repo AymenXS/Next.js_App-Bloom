@@ -33,7 +33,7 @@ const MobileNav = () => {
                         href={link.route}
                         key={link.label}
                       >
-                        <Image src={link.imgUrl} alt={link.label} width={20} height={20} />
+                        <Image src={link.imgURL} alt={link.label} width={20} height={20} />
                         <p className="font-semibold">{link.label}</p>
                       </Link>
                     </SheetClose>
